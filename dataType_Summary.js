@@ -5,3 +5,15 @@
 
 //** 1. Object 2. Array 3. Function 4. Date 5. RegExp
 
+const heros = ['superman', 'batman', 'spiderman', 'ironman', 'captain america', 'thor', 'hulk', 'black widow', 'black panther'];
+
+let Object = {
+    name:'nirmal',
+    age: 25,
+    profession: 'developer',
+    heros: heros
+}
+
+const myfunction = () => {
+    console.log('hello world');
+}
