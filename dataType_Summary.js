@@ -17,3 +17,19 @@ let Object = {
 const myfunction = () => {
     console.log('hello world');
 }
+// console.log(typeof Object);
+// console.log(typeof myfunction);
+
+
+let dataone={
+    name:'nirmal',
+    age: 25,
+    profession: 'developer',
+    heros: heros
+}
+
+let datatwo=dataone
+datatwo.name='nitin'
+
+console.log(dataone.name); 
+console.log(datatwo.name);
