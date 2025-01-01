@@ -1,4 +1,4 @@
-// primitive data type
+// primitive data type  ( stack memonry )
 //**  1. Number 2. String 3. Boolean 4. Undefined 5. Null 6. Symbol 7. BigInt
 
 // Non primitive data type (reference)
@@ -21,6 +21,7 @@ const myfunction = () => {
 // console.log(typeof myfunction);
 
 
+// heap memory
 let dataone={
     name:'nirmal',
     age: 25,
