@@ -15,7 +15,7 @@ let Object = {
 }
 
 const myfunction = () => {
-    console.log('hello world');
+    console.log('hello world'); 
 }
 // console.log(typeof Object);
 // console.log(typeof myfunction);
@@ -34,3 +34,4 @@ datatwo.name='nitin'
 
 console.log(dataone.name); 
 console.log(datatwo.name);
+
