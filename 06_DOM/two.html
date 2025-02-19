@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="two.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thrusday</div>
+    </div>
+    <script>
+        const days = document.querySelector(".parent");
+        // console.log(days.children);
+        // console.log(days.children[1].innerHTML);
+        
+        // for (let i = 0; i < days.children.length; i++) {
+        //     console.log(days.children[i].innerHTML);
+        // }
+
+        console.log(days.firstElementChild);
+        console.log(days.lastElementChild);
+
+        const firstday= document.querySelector('.day')
+        
+        console.log(firstday.parentElement);
+        console.log(firstday.nextElementSibling);
+        
+        
+    </script>
+</body>
+</html>
