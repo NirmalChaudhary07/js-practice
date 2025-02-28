@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>hello guys</h1>
+    <button id="stop">stop</button>
+
+    <script>
+        const id = document.getElementById('stop');
+        const yo=()=>{
+        const f = document.createElement('button');
+            f.innerText = 'start';
+            // const body =document.querySelector('body');
+            // body.appendChild(f);
+            document.body.appendChild(f);
+        }
+
+        function change (){
+            document.querySelector('h1').innerText="this is the java script series";
+        }
+        const se= setTimeout(change
+        //     (e) => {
+        //     console.log('hello');
+        //     id.innerHTML = 'start';
+        //     const f = document.createElement('button');
+        //     f.innerText = 'hello';
+        //     // const body =document.querySelector('body');
+        //     // body.appendChild(f);
+        //     document.body.appendChild(f);
+        // }
+        , 2000);
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(se);
+            console.log('stoped')
+        })
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white">
+    <h1>chai aur javascript</h1>
+    <button id="start" style="margin-right: 20px; padding: 6px;">Start</button>
+    <button id="stop" style="margin-right: 20px; padding: 6px;">Stop</button>
+
+    <script>
+        const l = () => {
+            console.log("nirmal",Date.now());
+            
+        }
+        let live;
+        document.querySelector('#start').addEventListener('click',function (e) {
+         live = setInterval(l, 1000); 
+        })
+        const stop = document.querySelector('#stop');
+        stop.addEventListener('click',function(){
+            clearInterval(live);
+        })
+    </script>
+</body>
+</html>

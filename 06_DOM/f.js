@@ -19,12 +19,9 @@
 
 //? Query selector
 //* class is access by . and id is #
-let firstEl = document.querySelector("p");
-console.log(firstEl);
-let allEl=document.querySelectorAll("p");
+// let firstEl = document.querySelector("p");
+// console.log(firstEl);
+// let allEl=document.querySelectorAll("p");
 
 
 // console.log(document.body.firstChild);
-
-
-  
