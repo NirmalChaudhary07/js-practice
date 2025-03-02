@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            /* display: flex; */
+            /* display: flexbox; */
+            align-items: center;
+            justify-content: center;
+            position:absolute;
+            height: 200px;
+            background-color: blueviolet;
+            width: 200px;
+            padding: 20px;
+            border: 2px solid grey;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: #212121; color: white;">
+    <!-- <button>hello</button> -->
+
+    <script>
+        const bt = document.createElement('button');
+        bt.innerText = 'click'; 
+        bt.setAttribute('class','clas');
+        document.body.appendChild(bt);
+        let na;
+        const requestUrl = 'https://api.github.com/users/nirmalchaudhary';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET',requestUrl);
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+            if(xhr.readyState ===4)
+        {  
+            let count = 0; 
+            const data = JSON.parse(this.responseText);
+            const p = document.querySelector('.clas');
+            p.addEventListener('click',function(){
+                const cr = document.createElement('div');
+            document.body.appendChild(cr);
+            // const add = document.querySelector('body');
+
+            cr.innerHTML=`<div class="h">
+                <h1>${data.name}</h1>
+                <p>following:${data.following}</p>
+                </div>`
+            })
+            // count =1 ;
+            if(count === 1){
+            p.addEventListener('click',function(){
+                const cr = document.createElement('div');
+            document.body.appendChild(cr);
+            // const add = document.querySelector('body');
+
+            cr.innerHTML=`<div class="h">
+                </div>`
+            })
+
+        }
+            // const cr = document.createElement('div');
+            // document.body.appendChild(cr);
+            // // const add = document.querySelector('body');
+
+            // cr.innerHTML=`<div class="h">
+            //     <h1>${data.name}</h1>
+            //     <p>following:${data.following}</p>
+            //     </div>`
+
+            
+        }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>
